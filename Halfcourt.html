@@ -4,12 +4,33 @@
   <meta charset="utf-8">
   <title>Hoops!</title>
 
+
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
   <script type="text/javascript" src="HalfcourtMinimax.js"></script>
+
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$("#js-decide").click(function(){
+  			$("#js-result").text(decide( 
+  				{ kGoodGuy : parseInt($("#js-good-guy-score").val()) , 
+  				  kBadGuy : parseInt($("#js-bad-guy-score").val()) } ))
+  		})
+  	})
+
+  </script>
 
 </head>
 <body>
 
-<h1>Hi</h1>
+<label>Your Score</label><input id="js-good-guy-score" type="text" value="0"></input>
+<label>Their Score</label><input id="js-bad-guy-score" type="text" value="0"></input>
+
+
+<button id="js-decide">What should I do?</button>
+
+<div id="js-result">
+
+</div>
 
 </body>
 </html>
