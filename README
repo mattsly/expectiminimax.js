@@ -1,0 +1,5 @@
+Simple implementation of a expectiminimax algorithm in javascript, used to make a best decision in a two player game that includes elements of chance.
+
+This version is based on trying to decide the best course of action for a halfcourt basketball game - whether to shoot a 3 or a 2
+
+(This is currently a naive implementation - not doing any pruning yet.)
